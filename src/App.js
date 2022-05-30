@@ -3,10 +3,12 @@ import './App.css';
 function App() {
   const numericalDidgits = () => {
     const digits = [];
-    for (let i = 1; i<10; i++){
-      
+    for (let i = 1; i < 10; i++){
+      digits.push(
+        <button key={i}>{i}</button>
+      )
     }
-    
+    return digits;
   }
   return (
     <div className="App">
@@ -22,6 +24,7 @@ function App() {
     <button>DEL</button>
   </div>
   <div className="digits">
+    { numericalDidgits() }
     <button>0</button>
     <button>=</button>
     <button>.</button>
