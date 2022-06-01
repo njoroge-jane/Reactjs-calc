@@ -11,7 +11,7 @@ function App() {
     return digits;
   }
   return (
-    <div className="App">
+    <div className="App text-center">
 <div className="calc">
   <div className="display">
     <span></span>0
