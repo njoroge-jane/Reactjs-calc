@@ -7,6 +7,7 @@ function App() {
       digits.push(
         <button key={i}>{i}</button>
       )
+      
     }
     return digits;
   }
